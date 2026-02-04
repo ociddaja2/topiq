@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'arial_rounded';
+    src: url('../font/arial-mt/ARIALROUNDEDMT.TTF');
+}
+
+@font-face {
+    font-family: 'arial_rounded2';
+    src: url('../font/arial-mt/ARIALROUNDEDMTEXTRABOLD.TTF');
+}
+
+* {
+    font-family: 'arial_rounded', sans-serif;  
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FEF9E1;
+}
+
+.sidebar {
+    background-color:#C14600;
+    align-items: center;
+    align-content: top;
+    height: 730vh;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;;
+}
+
+.sidebar-logo {
+    margin-left: 48px;
+    
+}   
+
+.sidebar-title {
+    text-align: center;
+    line-height: 50px;
+    color: rgb(255, 208, 1);
+}
+
+.sidebar img {
+    margin-top: 10px;
+    margin-left: -28px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: -40px;
+}
+
+li {
+    padding: 15px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 2px;
+    margin-left: -50px;
+    display: block;
+    border-bottom: 1px solid white;
+    color: rgb(255, 255, 255);
+}
+
+li a:hover {
+    background-color: rgba(251, 251, 251, 0.683);
+    color: rgb(253, 228, 0);
+    transition: 150ms ease;
+    transform: translateY(-2px); ;
+    font-weight: bold;
+}
+
+.section {
+    font-size: medium;
+    padding: 20px;
+    padding-left: 220px;
+    background: #E5D0AC;
+   
+}
+
+
+.table1 {
+    border-collapse: collapse;
+    border:solid 1px #C14600;
+    width: 100%;
+   
+}
+
+.table1 tr th {
+    color: black;
+    background-color: #FF9D23;
+    text-align: center;
+    padding: 10px;
+}
+
+.table1 tr td  {
+    text-align: center;
+    font-size: larger;
+    padding: 15px;  
+    background-color: #FEF9E1;
+}
+
+
+.profile-form input, .password-form input {
+    padding: 19px;
+    padding-right: 80px;
+  border: 2px solid #C14600;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #FEF9E1;
+  color: #333;
+}
+
+.profile-form button, .password-form button {
+     background-color: #FF9D23;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+
+.profile-form fieldset, .password-form fieldset {
+    border: none;
+}
+
+.section h1 {
+    color: #C14600;
+}
+
+.section h2 {
+    color: #C14600;
+}
+
+.section h3 {
+    color: #C14600;
+}

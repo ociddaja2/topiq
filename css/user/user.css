@@ -1,0 +1,148 @@
+
+.container {
+    width: 90%;
+    margin: auto;  
+}
+
+.category-section {     
+    width: 100%;
+    margin: auto;
+    background-color: #4d4d4d;
+    padding: 20px 0;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+    justify-content: center;
+}
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    padding-left: 87px;
+}
+
+.col-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+.col-5 p {
+    width: 200px;
+    background-color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffdd00;
+    color: #000000;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+
+.col-5 p:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 251, 0);
+    border: 1px solid rgb(9, 9, 9);
+    border-radius: 5px;
+    transition: 150ms ease;
+    transform: translateX(-2px);
+}
+
+.box .col-4 {
+    width: 100%;
+    max-width: 230px;
+    height: 350px;  
+    background-color: #F5C45E;
+    border: 10px solid #E78B48;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.col-4 {
+   display: flex;
+    float: left;
+    padding: 10px 10px;
+    gap: 20px; /* Jarak antar barang */
+    justify-content: center; /* Agar sejajar di tengah halaman */
+
+}
+
+.box p.nama {
+    font-size: 17px;
+    font-weight: bolder;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.box p.harga {
+    font-size: 14px;
+    color: #ffffff;
+
+}
+
+.buy {
+    background-color: rgb(255, 221, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.col-4 img {
+    max-width: 190px;
+
+}
+
+.col-4 a {
+    text-decoration: none;
+    color: rgb(255, 217, 0);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.col-4 a:hover {
+    color: rgb(0, 0, 0);
+    transition: 150ms ease;
+    transform: translateY(-5px);
+}
+
+
+
+.col-4 input [type="number"] {
+    width: 50px;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+
+.col-4 button{
+    background-color: #ffe100;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.col-4 button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 217, 0);
+    border-radius: 5px;
+    transition: 150ms ease;
+    transform: translateX(-2px);
+}

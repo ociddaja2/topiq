@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Reset and Base */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Make sure html and body take up full width and height */
+html, body {
+width: 100%;
+height: 100%;
+}
+
+/* Optional: Make your container go full width */
+.container {
+width: 100%;
+max-width: 100%;
+padding: 0;
+margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+
+/* Section Title */
+.section-title {
+    font-family: Oswald;
+}
+
+.section-title {
+    position: sticky;
+    top: 67px; /* Adjust this to match your navbar height */
+    background: white; /* Ensures readability when overlapping other elements */
+    padding: 10px;
+    z-index: 999; /* Keeps it above other elements */
+    border-bottom: 2px solid #ddd; /* Optional: Adds a separator */
+}
+/* Container */
+.section .container {
+    margin-top: 60px; /* Adjust this value as needed */
+    max-height: 1000rem; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 50px;
+    background-color: rgba(223, 183, 51, 0.3); /* Light background for contrast */
+    scrollbar-width: thin;
+}
+
+
+/* Product Detail Layout */
+.product-detail-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.product-detail-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-detail-info {
+    flex: 1;
+}
+
+.product-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center cards horizontally */
+  padding: 20px;
+}
+
+.product-cell {
+  background-color: #d9ad26;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 250px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+.product-cell:hover {
+  transform: scale(1.03);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-price {
+  color: #222;
+  font-size: 14px;
+}
+
+.product-stock {
+  font-size: 13px;
+  color: #555;
+}
+
+.quantity-input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.add-to-cart-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #333;
+}
+
+
+.product-detail-info h1 {
+    font-size: 36 qpx;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: #1d2f5d;
+}
+
+.product-price {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3d2040;
+    margin-bottom: 8px;
+}
+
+.product-stock {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #2a2727;
+    margin-bottom: 20px;
+}
+
+.product-size {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #2a2727;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #3d2040;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.product-details {
+    padding: 1em;
+    border: 1px solid #121212;
+    border-radius: 4px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+    max-height: 70px;
+    overflow: hidden;
+    min-width: 60rem;
+    max-width: 60rem;
+}
+
+
+.product-details summary {
+    outline: none;
+    cursor: pointer;
+}
+
+details[open].product-details summary {
+    padding-bottom: 1em;
+
+}
+
+details[open].product-details {
+    background-color: rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+}
+
+
+/* Form Inputs */
+.quantity-input {
+    width: 80px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #0a1a3a;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+
+.add-to-cart-btn {
+    background-color: #0a1a3a;
+    color: #fff;
+    padding: 10px 22px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #031024;
+}
+
+/* Footer Placeholder */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 14px;
+}

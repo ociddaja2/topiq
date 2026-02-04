@@ -1,0 +1,682 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'arial';
+    src: url('../font/arial-mt/ARIALROUNDEDMT.TTF');
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FEF9E1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+
+
+.navbar {
+    background-color: #ff000000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    color: orange;
+    right: 2%;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    position: absolute;
+}
+
+.logo img {
+    width: 150px;
+    margin-right: 10px; 
+    margin-top: -40px;
+    margin-bottom: -35px;
+    
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Header & Navbar */
+
+
+
+/* HALAMAN PRODUK */
+
+/* SEARCH */
+
+.search {
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.search input[type="text"]:focus {
+    outline: none;
+    border: 1px solid rgb(255, 217, 0);
+    transition: 150ms ease;
+    transform: translateX(-2px);
+}
+
+.search button img {
+    width: 10px;
+    height: 10px;
+} 
+
+.search button {
+    background-color: rgb(255, 221, 0);
+    color: rgb(0, 0, 0);
+    margin-top: -50px;
+    border: none;  
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 217, 0);
+    border-radius: 5px;
+    transition: 150ms ease;
+}
+
+.search span{
+    font-size: 12px;
+    color: black;
+    margin-top: -20px;
+}
+
+/* SEARCH */
+
+
+
+.section h3 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.section h4 {
+    text-align: center;
+}
+
+
+
+
+/* Halaman Produk */
+
+/* Kategori */
+.section-category {
+    width: 100%;
+    background-color: #8b4c2b;
+    padding: 40px 0 ;
+    margin-bottom: 30px;
+}
+
+.section-category h3 {
+    padding-top: -20px;
+    padding-bottom: 20px ;
+    color: #FF9D23;
+}
+
+
+.container-category {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+
+}
+
+.category-section {     
+    width: 100%;
+    background-color: #4d4d4d;
+    padding: 20px ;
+}
+
+.box {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding-left: 175px;
+}
+
+.col-5 {
+    justify-content: center;
+    width: 200px;
+    height: 80px;
+    border: 1px solid #E5D0AC;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #C14600;
+    border-radius: 5px;
+    padding-top: 29px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.col-5 p {
+    color: #FEF9E1;
+}
+
+.col-5:hover {
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    background-color: #FF9D23;
+    border: 1px solid #C14600;
+}
+
+/* Kategori */
+
+
+/* Produk */
+
+/* Kotak setiap produk */
+
+
+.section-product {
+  background-color: chocolate;
+  border-radius: 40px;
+  padding: 40px 0; 
+  margin-bottom: 100px; 
+  text-align: center;
+    padding-left: 100px; 
+}
+
+.container-product {
+   padding: 10px -10px;
+  
+}
+
+.box1 {
+    margin: 40px 0;
+    margin-bottom: 20px;    
+}
+
+.col-4:hover {
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    color: #FF9D23;
+    background-color: #BE3D2A;
+}
+
+
+.col-4 {
+  background-color: #8b4c2b;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 180px;
+  height: auto;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 280px;
+}
+
+.col-4 a {
+    text-decoration: none;
+}
+
+/* Supaya tidak terlalu besar lebarnya */
+.col-4 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.col-4 p.nama {
+  font-weight: bolder;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.col-4 p.harga {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: rgb(255, 217, 0);
+}
+
+.col-4 form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-4 input[type="number"] {
+  width: 40px;
+  padding: 3px;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+}
+
+
+.col-4 button.buy {
+  background-color: orange;
+  color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.col-4 button.buy:hover {
+  background-color: #ffae00;
+}
+
+
+/* Produk */
+
+/* Tabel1 */
+
+
+.table1 {
+    width: 90%;
+    border: 4px solid #FF9D23;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 90px;
+    margin-bottom: 20px;
+
+} 
+
+.table1 th, .table1 td {
+    border: 4px solid #FF9D23;
+    padding: 10px;
+    text-align: center;
+    background-color: #E5D0AC;
+}
+
+.boxtf {
+    background-color: #E5D0AC;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    max-width: 600px;
+    margin: auto;   
+    text-align: center;
+    font-weight: bolder;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-left: 90px;
+    padding: 10px 20px;
+    background-color:#C14600 ;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    width : 90%;
+}
+
+.btn:hover {
+    background-color:#FF9D23;
+}
+
+.btn1 {
+    margin-top: 10px;
+    margin-left: 120px;
+    padding: 5px 20px;
+    background-color: #C14600;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn1:hover {
+    background-color: #f5f5f5;
+}
+
+/* Navbar */
+
+header {
+    padding: 10px 0;
+    background-color: #C14600;
+    color: rgb(255, 213, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    padding: 10px 0;
+    margin-right: auto;
+}
+
+header h1 a {
+    color: rgb(255, 208, 0);
+    text-decoration: none;
+    font-family: arial;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    padding: 20px 20px 20px 15px;
+    display: inline-block;
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 150ms ease;
+}
+
+header ul li a:hover {
+    color: rgb(255, 230, 0);
+    transform: translateY(-5px);
+}
+
+/* Header & Navbar */
+
+/* SEARCH */
+
+.search {
+    background: #FEF9E1;
+    padding: 10px;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.search input[type="text"]:focus {
+    outline: none;
+    border: 1px solid rgb(255, 217, 0);
+    transition: 150ms ease;
+    transform: translateX(-2px);
+}
+
+.search button img {
+    width: 18px;
+    height: 15px;
+}
+
+.search button {
+    background-color: rgb(255, 221, 0);
+    color: rgb(0, 0, 0);
+    margin-top: -5px;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+   
+}
+
+.search button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 217, 0);
+    border-radius: 5px;
+    transition: 150ms ease;
+    transform: translateX(-2px);
+}
+
+.search span {
+    font-size: 12px;
+    color: black;
+    float: right;
+}
+
+/* SEARCH */
+
+/* Produk */
+
+/* Kotak setiap produk */
+
+.section-product {
+    padding: 25px ;
+    background-color: chocolate;
+    margin: 20px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+
+.col-4 {
+    background-color: #8b4c2b;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 70px;
+    width: 180px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Supaya tidak terlalu besar lebarnya */
+
+.col-4 img {
+    max-width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.col-4 .nama {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: aqua;
+}
+
+.col-4 .harga {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.col-4 form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-4 input[type="number"] {
+    width: 40px;
+    padding: 3px;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+}
+
+.col-4 button.buy {
+    background-color: orange;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.col-4 button.buy:hover {
+    background-color: #C14600;
+    color: #ffae00;
+    border: solid 2px #ffae00;
+}
+
+/* Produk */
+
+
+.profile-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #E5D0AC;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.profile-container h2  {
+    text-align: center;
+  margin-bottom: 20px;
+  color: #C14600;
+}
+
+.password-form h3 {
+    text-align: center;
+  margin-bottom: 20px;
+  color: #C14600;
+}
+
+.profile-form fieldset, .password-form fieldset {
+    padding: 10px;
+    border: none;
+}
+
+.profile-form,
+.password-form {
+  display: flex;
+  flex-direction: column;
+    gap: 9px;
+}
+
+.profile-form input, .password-form input {
+    padding: 12px;
+  border: 2px solid #C14600;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #FEF9E1;
+  color: #333;
+  margin-left: 149px;
+}
+
+.profile-form button, .password-form button {
+    background-color: #FF9D23;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+    margin-left: 196px;
+  transition: background-color 0.3s;
+}
+
+.password-form button {
+    background-color: #FF9D23;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+    margin-left: 187px;
+  transition: background-color 0.3s;
+}
+
+footer {
+    background-color: #C14600;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    position : absolute;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer1 {
+     background-color: #C14600;
+    color: white;
+    width: 100%;
+    position: relative;
+    padding: 15px 20px;
+    bottom: 10%;
+    text-align: center;
+}
+
+.footer{
+    background-color: #C14600;
+    color: white;
+    bottom: auto;
+    width: 100%;
+    position : relative;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.icon-text-wrapper {
+    display: flex;
+    align-items: center; /* Menyelaraskan secara vertikal di tengah */
+    margin-bottom: 10px; /* Jarak antar baris */
+    justify-content: center;
+}
+
+.icon-text-wrapper img,
+.icon-text-wrapper i {
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    width: 24px; /* Sesuaikan ukuran ikon */
+    height: 24px; /* Sesuaikan ukuran ikon */
+}

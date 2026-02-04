@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family: 'arial_rounded';
+    src: url('../font/arial-mt/ARIALROUNDEDMT.TTF');
+}
+
+@font-face {
+    font-family: 'arial_rounded2';
+    src: url('../font/arial-mt/ARIALROUNDEDMTEXTRABOLD.TTF');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial_rounded', sans-serif;
+}
+
+body {
+    background: url(../img/loginbg.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+
+#bg-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.box-login {
+    width: 450px;
+    height: 540px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-left: -750px;
+    background-color: #FEF9E1;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.box-login h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #dda200;
+    font-family: 'arial_rounded2', sans-serif;
+}
+.input-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+}
+
+.btn {
+    background-color: #dda200;
+    padding: 8px 15px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 40px;
+    width: 60%;
+    margin-left: 85px;
+}
+
+.btn:hover {
+    color : rgb(0, 0, 0);
+    background-color: #ffffff;
+    transition: 150ms ease;
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 4px 1px #dda200;
+}
+
+.box-login img {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+   
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+
